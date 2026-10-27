@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos retro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <H1>Jogos Retro</H1><br>
+        <img src = "logo.png" class = "logo">
+    </header>
+    <main class = "container">
+        <div class = "titulo-secao">
+            <div>
+                <h2>Nosso catálogo</h2>
+                <p>Conheça os jogos disponiveis</p>
+            </div>
+            <button id="btnCadastrar" type="button">Cadastrar Jogo</button>
+        </div>
+        <section id="listarJogos" class="listar-jogos">
+        </section>
+    </main>
+    <dialog id="modalCadastro">
+        <h2>Novo Jogo</h2>
+        <form id = "formJogo">
+            <label>Nome do jogo</label>
+            <input type="text" id="titulo" required>
+            <label>Plataforma</label>
+            <input type="text" id="plataforma" required>
+            <label>Desenvolvedora</label>
+            <input type="text" id="desenvolvedora" required>
+            <label>URL da Imagem</label>
+            <input type="url" id="imagem" placeholder="https://site.com/capa.png" required>
+            <label>Preço (R$)</label>
+            <input type="number" id="preco" min="0.01" step="0.01" required>
+            <div class="acoes">
+                <button type="button" id="btnCancelar"
+                class="cancelar">Cancelar</button>
+                <button type="submit">Salvar Jogo</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+<script src="script.js"></script>
+</html>

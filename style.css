@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P';
+    background: #000;
+    color: #ffcc00;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 30px 8%;
+    border-bottom: 4px solid #e40d0d;
+}
+
+header h1 {
+    font-weight: 900;
+    font-family: 'Press Start 2P';
+    color: #ffcc00;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 8px;
+}
+
+.titulo-secao p {
+    color: rgb(224, 224, 224);
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bc9600;
+}
+
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #111111;
+}
+
+.listar-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-jogo {
+    line-height: 24px;
+    background: rgb(11, 0, 49);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0d8ce;
+    box-shadow: 0 4px 12px #000;
+}
+
+.capa {
+    height: 180px;
+    background: #292320;
+    color: #f5f1e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-jogo {
+    padding: 18px;
+}
+
+.info-jogo h3 {
+    margin-bottom: 8px;
+}
+
+.info-jogo {
+    margin-top: 8px;
+    color: white;
+    overflow-wrap: anywhere;
+}
+
+.preco {
+    display: block;
+    color: #e87032;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+dialog {
+    width: min(90%, 420px);
+    background-color: #d3d3d3;
+    margin: auto;
+    padding: 25px;
+    border: solid 3px #000;
+    box-shadow: 4px 4px 0 #000;
+}
+
+dialog::backdrop {
+    background: #00000099;
+}
+
+dialog h2 {
+    margin-bottom: 20px;
+
+}
+
+form label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 20px;
+    font-weight: normal;
+}
+form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.acoes{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+    margin-top: 24px;
+}
+button.cancelar{
+    background: #e7e1d9;
+    color: #252525;
+}
+button.cancelar:hover{
+    background: #d5ccc1;
+}
+.capa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
