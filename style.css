@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Press Start 2P';
-    background: #000;
+    background: #0714d3;
     color: #ffcc00;
 }
 
@@ -16,7 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #000;
+    background: rgb(11, 0, 49);
     color: #fff;
     padding: 30px 8%;
     border-bottom: 4px solid #e40d0d;
@@ -76,7 +76,7 @@ button:hover {
 
 button:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0px #111111;
+  box-shadow: 2px 2px 0px #000;
 }
 
 .listar-jogos {
@@ -88,10 +88,9 @@ button:active {
 .card-jogo {
     line-height: 24px;
     background: rgb(11, 0, 49);
-    border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #e0d8ce;
-    box-shadow: 0 4px 12px #000;
+    border: 3px solid #000;
+    box-shadow: 0 4px 4px #000;
 }
 
 .capa {
