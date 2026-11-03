@@ -1,1 +1,1 @@
-# criação de um site de uma loja de jogos retro
+# Criação de um site MVC de jogos retro
