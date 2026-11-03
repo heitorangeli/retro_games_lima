@@ -3,7 +3,7 @@ CREATE DATABASE jogos;
 USE jogos;
 
 CREATE TABLE jogo(
-    id int(4) not null auto_increment,
+    id int(4) not null auto_increment PRIMARY KEY,
     titulo text not null,
     plataforma text not null,
     desenvolvedora text not null,
@@ -21,4 +21,4 @@ VALUES ('The Legend of Zelda', 'NES', 'Nintendo', 'https://exemplo.com/zelda.jpg
 INSERT INTO jogo (titulo, plataforma, desenvolvedora, imagem_url, preco) 
 VALUES ('Pong', 'Arcade', 'Atari', 'https://exemplo.com/pong.jpg', 49.90);
 
-select * from aluno;
+select * from jogo;
